@@ -1,7 +1,7 @@
 <h1 align="center">Gregtech: Stellar ascension</h1> 
 
 <p align="center">
-  <i>Welcome to the Catalyst Studios GitHub. This repo is for our friend ItzSk and his pack <b>Space Greg</b>!</i>
+  <i>Welcome to the Catalyst Studios GitHub. This repo is for our friend ItzSk and his pack <b>Gregtech: Stellar ascension</b>!</i>
 </p>
 
 <h3 align="center">

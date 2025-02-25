@@ -1,0 +1,17 @@
+{
+    "material.gtceu.copper_slurry": "Copper Slurry",
+    "material.gtceu.resource_slurry": "Resource Slurry",
+    "material.gtceu.iron_slurry": "Iron Slurry",
+    "material.gtceu.tin_slurry": "Tin slurry",
+    "material.gtceu.redstone_slurry": "Redstone slurry",
+    "material.gtceu.coal_slurry": "Coal slurry",
+    "material.gtceu.ilmenite_slurry": "Ilmenite slurry",
+    "material.gtceu.diamond_slurry": "Diamond slurry",
+    "material.gtceu.silver_slurry": "Silver slurry",
+    "material.gtceu.nickel_slurry": "Nickel slurry",
+    "material.gtceu.pure_metal_solution": "Pure metal solution",
+    "material.gtceu.mixed_metal": "Mixed metal",
+    "block.gtceu.greenhouse": "Greenhouse",
+    "gtceu.greenhouse": "Greenhouse"
+
+    }

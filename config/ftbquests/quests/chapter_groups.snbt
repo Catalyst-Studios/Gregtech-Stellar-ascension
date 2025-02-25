@@ -1,0 +1,6 @@
+{
+	chapter_groups: [
+		{ id: "1508B49DF04F795F", title: "Welcome" }
+		{ id: "41FB9B0C53240A0C", title: "Gregtech" }
+	]
+}

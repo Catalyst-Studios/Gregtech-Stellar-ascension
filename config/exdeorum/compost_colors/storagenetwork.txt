@@ -1,0 +1,13 @@
+// Compost colors for storagenetwork. You may add your own colors, change existing ones, or remove colors that aren't needed.
+builder_remote, #b48787
+collector_remote, #bcbcbc
+crafting_remote, #c6c6be
+expanded_remote, #989898
+inventory_remote, #c3c3bc
+operation_upgrade, #d7e6e6
+picker_remote, #898989
+single_upgrade, #d9d7d6
+slow_upgrade, #b2c5b2
+speed_upgrade, #c5b2b2
+stack_upgrade, #c5c5b2
+stock_upgrade, #bfbebb

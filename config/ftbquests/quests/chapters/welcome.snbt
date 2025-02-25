@@ -1,0 +1,31 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome"
+	group: "1508B49DF04F795F"
+	id: "632560FAD4329185"
+	images: [{
+		click: "https://discord.gg/TApfFkBwwc"
+		height: 1.0d
+		image: "kubejs:textures/discord_logo.png"
+		rotation: 0.0d
+		width: 1.0d
+		x: 1.5d
+		y: 0.0d
+	}]
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		description: ["Your goal is to progress through all tiers of GregTech, build 11 tiers of rockets, and explore nearby planets for resources to help you return to your home planet."]
+		id: "043605E2F8B00387"
+		subtitle: "You got sent to space, civilization has ceased communication with you, an asteroid destroyed your storage, communications and all you've left is this space station. "
+		tasks: [{
+			id: "51F6B38D389D3074"
+			title: "Welcome"
+			type: "checkmark"
+		}]
+		x: -0.5d
+		y: 0.0d
+	}]
+	title: "Welcome"
+}

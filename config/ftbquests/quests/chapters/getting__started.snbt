@@ -1,0 +1,401 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "getting__started"
+	group: "1508B49DF04F795F"
+	icon: "minecraft:grass_block"
+	id: "54184E710870D2F0"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["This space station has an oxygen distributor and a gravity normalizer. It is fully vented to provide oxygen in all areas. However, if you want to expand it, you'll need a space suit and flight capabilities to go outside and build additional sections."]
+			id: "624EC53FDD284A3D"
+			size: 2.0d
+			tasks: [{
+				id: "452C204BE58876E9"
+				title: "Oxygen"
+				type: "checkmark"
+			}]
+			title: "Important"
+			x: -16.0d
+			y: 0.0d
+		}
+		{
+			description: ["Just like any other start."]
+			id: "05150AE88A385822"
+			tasks: [
+				{
+					id: "4C68BF26E5F844BC"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+				{
+					id: "1650102561512DDF"
+					item: "minecraft:oak_planks"
+					type: "item"
+				}
+			]
+			x: -12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["05150AE88A385822"]
+			description: [
+				"Craft one so you can carry a crafting table on you."
+				"You can have this in it's curios slot and change the keybind for it in configs."
+			]
+			id: "30C5E123B1DA134A"
+			tasks: [{
+				id: "1A8B2074D5A8715C"
+				item: "crafting_on_a_stick:crafting_table"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["30C5E123B1DA134A"]
+			dependency_requirement: "all_started"
+			description: [
+				""
+				""
+				"Break leaves using the crook to get silkworms."
+			]
+			id: "06C3E5762350B070"
+			tasks: [
+				{
+					id: "2332AB1BBC686041"
+					item: {
+						Count: 1
+						id: "exdeorum:crook"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0D48F8CFFC7499B9"
+					item: "exdeorum:silk_worm"
+					type: "item"
+				}
+			]
+			x: -10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["30C5E123B1DA134A"]
+			id: "4C6835EC125553D8"
+			tasks: [{
+				id: "5E3B40F0A8BDC951"
+				item: "exdeorum:oak_barrel"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"707BD6D5AC742FCD"
+				"43BFA5015D95E940"
+			]
+			description: ["It's sieving time."]
+			id: "47E745962FD51589"
+			tasks: [
+				{
+					id: "5C1ADF0B3976D8F3"
+					item: "exdeorum:oak_sieve"
+					type: "item"
+				}
+				{
+					id: "7E70C68BF5D7503F"
+					item: "exdeorum:string_mesh"
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4C6835EC125553D8"
+				"7570AB5FE373C306"
+			]
+			description: ["Dirt can be sieved for stone pebbles, your only source of cobblestone till you make a cobble gen."]
+			id: "43BFA5015D95E940"
+			tasks: [{
+				id: "2D6826AF7F9F6F53"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["06C3E5762350B070"]
+			description: ["By using silkworms on leaves, you can turn them into infested leaves. When broken with a crook, these leaves drop string."]
+			id: "707BD6D5AC742FCD"
+			tasks: [{
+				id: "5E31B5A5D0203A88"
+				item: "exdeorum:string_mesh"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4C6835EC125553D8"]
+			description: ["Leaves have been buffed to make 1000 compost each, so 1 leave = 1 dirt."]
+			id: "7570AB5FE373C306"
+			tasks: [{
+				id: "5E449D24DB5A258B"
+				item: {
+					Count: 1
+					id: "woodenshears:wooden_shears"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["47E745962FD51589"]
+			description: [
+				"Craft pebbles into cobblestone and hammer it down into gravel, sand and dust. "
+				"These can be sieved for different resources."
+			]
+			id: "3C557ED704A23D9A"
+			tasks: [
+				{
+					id: "04265A2E46D0FF2A"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					id: "53803FCFE4B22DF9"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(exdeorum:hammers)"
+						}
+					}
+					title: "Any #exdeorum:hammers"
+					type: "item"
+				}
+				{
+					id: "5AC553898A676624"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					id: "7C10EDFDAE99D7CB"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "5E16E803C68AAC9A"
+					item: "exdeorum:dust"
+					type: "item"
+				}
+			]
+			title: "Hammering"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C557ED704A23D9A"]
+			description: [
+				"You can smelt iron nuggets into wrought iron nuggets, which can be crafted into wrought iron ingots."
+				"Wrought iron tools are a lot more durable."
+			]
+			id: "2FB3D7B32FFD9585"
+			tasks: [{
+				id: "0F38DF27B1155634"
+				item: "gtceu:wrought_iron_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2FB3D7B32FFD9585"]
+			description: ["Prepare for  a lot of micro crafting."]
+			id: "1A2188273D16D75A"
+			tasks: [
+				{
+					id: "07EAF1D56D2EE269"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/hammers)"
+						}
+					}
+					title: "Any #forge:tools/hammers"
+					type: "item"
+				}
+				{
+					id: "237DFC9DDC3B0D47"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/mortars)"
+						}
+					}
+					title: "Any #forge:tools/mortars"
+					type: "item"
+				}
+				{
+					id: "7C9EF100128A9437"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/files)"
+						}
+					}
+					title: "Any #forge:tools/files"
+					type: "item"
+				}
+				{
+					id: "6E214DE0AAEA29E5"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/wire_cutters)"
+						}
+					}
+					title: "Any #forge:tools/wire_cutters"
+					type: "item"
+				}
+				{
+					id: "21FC858C73AA3699"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/screwdrivers)"
+						}
+					}
+					title: "Any #forge:tools/screwdrivers"
+					type: "item"
+				}
+				{
+					id: "765181D4A595EED0"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/saws)"
+						}
+					}
+					title: "Any #forge:tools/saws"
+					type: "item"
+				}
+				{
+					id: "0E8C861DDC4C88EA"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:tools/wrenches)"
+						}
+					}
+					title: "Any #forge:tools/wrenches"
+					type: "item"
+				}
+			]
+			title: "Gregtech tools"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A2188273D16D75A"]
+			description: ["Using the crucible, you can turn leaves/saplings into water."]
+			id: "3FBED7389D05AB9D"
+			tasks: [
+				{
+					id: "762B53C1D499437B"
+					item: "exdeorum:oak_crucible"
+					type: "item"
+				}
+				{
+					id: "4BC5E8C16633A69F"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+			]
+			title: "Water"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"30A63760ADD8C199"
+				"3FBED7389D05AB9D"
+			]
+			id: "4884C06B66F966DC"
+			tasks: [{
+				id: "13470046CC704D0B"
+				item: "cobblefordays:tier_1"
+				tags: ["cobbleforgedays"]
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["76EB25186E187B8F"]
+			id: "30A63760ADD8C199"
+			tasks: [{
+				id: "78DD1E989CE1D408"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["389C0B82FEA71046"]
+			id: "76EB25186E187B8F"
+			tasks: [
+				{
+					id: "6575244C39E458FB"
+					item: "exdeorum:porcelain_clay_ball"
+					type: "item"
+				}
+				{
+					id: "5ACD6EE899D2E3CD"
+					item: "exdeorum:porcelain_crucible"
+					type: "item"
+				}
+			]
+			title: "Porcelain crucible"
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"3FBED7389D05AB9D"
+				"4C6835EC125553D8"
+			]
+			description: ["Use the oak barrel to make clay."]
+			id: "389C0B82FEA71046"
+			tasks: [{
+				id: "6C65573D69594246"
+				item: "minecraft:clay"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.0d
+		}
+	]
+	title: "Getting  started"
+}
